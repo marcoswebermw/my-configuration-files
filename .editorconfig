@@ -1,0 +1,60 @@
+# http://editorconfig.org
+; This file is for unifying the coding style for different editors and IDEs.
+
+# Ignore any other files further up in the file system
+root = true
+
+# Configuration for all files
+[*]
+# Force space characters for indentation
+indent_style = space
+# Always indent by 4 characters
+indent_size = 4
+# Always end files with a blank line
+insert_final_newline = true
+# Remove whitespace characters at the end of line
+trim_trailing_whitespace = true
+# Enforce Unix style line endings (\n only)
+end_of_line = lf
+charset = utf-8
+
+# Docstrings and comments use max_line_length = 79
+[*.py]
+max_line_length = 119
+
+# Use 2 spaces for the HTML files
+[*.html]
+indent_size = 2
+
+[*.php]
+indent_style = space
+indent_size = 4
+
+[*.{yml,js,css,scss,eslintrc,feature}]
+indent_size = 2
+indent_style = space
+
+# The JSON files contain newlines inconsistently
+[*.json]
+indent_size = 2
+insert_final_newline = ignore
+
+# Minified JavaScript files shouldn't be changed
+[**.min.js]
+indent_style = ignore
+insert_final_newline = ignore
+
+# Makefiles always use tabs for indentation
+[Makefile]
+indent_style = tab
+
+# Batch files use tabs for indentation
+[*.bat]
+indent_style = tab
+
+[*.md]
+trim_trailing_whitespace = false
+
+[package.json]
+indent_style = space
+indent_size = 2
