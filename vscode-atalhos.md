@@ -18,6 +18,7 @@
 * Zen Mode - `(Ctrl + k) + z`  
 * Split horizontal - `Ctrl + \`  
 * Comentar linha - `Ctrl + /`  
+* Comentário em bloco - `Ctrl + Shift + a`
   
 ### Acessar painéis laterais
   
